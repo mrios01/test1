@@ -1,0 +1,80 @@
+.group-container {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+
+  .multi-button {
+    font-size: 0;
+
+    button {
+      border: 3px solid #eb1f99;
+      color: #58bac6;
+      background-color: #23053a !important;
+      outline: 0;
+      font-family: MyGirlIsRetro, Arial;
+      font-weight: 800;
+      min-width: 100px;
+      text-transform: uppercase;
+      border-radius: 8px;
+      font-size: 15px;
+      display: inline-block;
+      padding: 10px 8px;
+      margin: 0 3px 0 0;
+      cursor: pointer !important;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+
+      &:focus {
+        border-color: #fe86cf;
+        color: #fe86cf;
+        background-color: #b70170;
+        padding: 16px 16px;
+        outline: 0;
+        border-radius: 12px;
+      }
+
+      &:focus:first-of-type {
+        border-radius: 30px 12px 12px 30px;
+      }
+
+      &:focus:last-of-type {
+        border-radius: 12px 30px 30px 12px;
+      }
+
+      &::-moz-focus-inner {
+        border: 0;
+      }
+
+      &:first-of-type {
+        border-radius: 20px 8px 8px 20px;
+      }
+
+      &:last-of-type {
+        border-radius: 8px 20px 20px 8px;
+      }
+
+      &:hover {
+        border-color: #fe86cf;
+        color: #fe86cf;
+        background-color: #b70170;
+      }
+    }
+  }
+}
+
+.fs15 {
+  font-size: 15px;
+  font-size: calc(9px + 0.313vw);
+}
+/*
+font-face {
+    font-family: MyGirlIsRetro;
+    src: url(../../../../assets/fonts/MyGirlIsRetroDEMO.ttf);
+}
+*/
+@media only screen and (max-width: 767px) {
+  button {
+    min-width: 80px;
+  }
+}

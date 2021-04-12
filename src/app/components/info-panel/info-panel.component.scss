@@ -1,0 +1,38 @@
+.mainWrapper {
+  background: rgb(60, 10, 72);
+  background: linear-gradient(
+    0deg,
+    rgba(60, 10, 72, 1) 32%,
+    rgba(36, 7, 59, 1) 91%
+  );
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+
+  .title {
+    margin: 0;
+    padding-top: 50px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: #58bac6;
+    font-family: MyGirlIsRetro, Arial;
+  }
+
+  .mainActions {
+    position: relative;
+    padding-top: 50px;
+  }
+}
+
+.fs40 {
+  font-size: 40px;
+  font-size: calc(20px + 1.043vw);
+}
+
+/*
+@font-face {
+    font-family: MyGirlIsRetro;
+    src: url
+(../../../assets/fonts/MyGirlIsRetroDEMO.t//tf);
+}
+*/
