@@ -26,6 +26,9 @@ export class MapActionsComponent implements OnInit {
       case Annotation.POINT:
         return this.mapBoxService.drawPoint();
 
+      case Annotation.PINS:
+        return this.mapBoxService.drawPins();
+
         defaut: break;
     }
   }

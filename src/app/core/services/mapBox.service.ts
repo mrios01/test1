@@ -116,6 +116,10 @@ export class MapBoxService {
 		});
 	}
 
+  drawPins(action = null) {
+    console.log("Pins");
+  }
+
 	drawPolygon(action = null) {
 
 		if(!this.canAddAnnotation('Polygon')) return this.toastService.showToast(

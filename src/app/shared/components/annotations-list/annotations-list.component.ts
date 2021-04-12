@@ -62,6 +62,7 @@ export class AnnotationsListComponent implements OnInit, OnDestroy {
       return this.mapBoxService.drawPolygon("repaint");
     if (type == Annotation.LINESTRING)
       return this.mapBoxService.drawLinestring("repaint");
+    if (type == Annotation.PINS) return this.mapBoxService.drawPins("repaint");
   }
 
   setActiveAndZoomMap(id, type, center) {
